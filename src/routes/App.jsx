@@ -14,8 +14,8 @@ const App = () => {
                 <Routes>
                     <Route exact path="/" element={<Home/>} />
                     <Route exact path="/login" element={<Login/>} />
-                    <Route exact path="recovery-password" element={<RecoveryPassword/>} />
-                    <Route element={<NotFound/>} />
+                    <Route exact path="/recovery-password" element={<RecoveryPassword/>} />
+                    <Route path="*" element={<NotFound/>} />
                 </Routes>
             </Layout>
         </BrowserRouter>
