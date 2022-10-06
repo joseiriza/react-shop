@@ -13,6 +13,10 @@ const MyOrder = () => {
 		return sum;
 	}
 
+	const handleCheckout = () => {
+		console.log('handling checkout');
+	}
+
 	return (
 		<aside className="MyOrder">
 			<div className="title-container">
@@ -29,7 +33,7 @@ const MyOrder = () => {
 					</p>
 					<p>${sumTotal()}</p>
 				</div>
-				<button className="primary-button">
+				<button onClick={handleCheckout} className="primary-button">
 					Checkout
 				</button>
 			</div>
