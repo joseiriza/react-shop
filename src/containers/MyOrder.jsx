@@ -3,7 +3,7 @@ import OrderItem from '@components/OrderItem';
 import AppContext from '../context/AppContext';
 import '@styles/MyOrder.scss';
 import arrow from '@icons/flechita.svg';
-import { useNavigate, redirect } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const MyOrder = () => {
 	const { state } = useContext(AppContext);
