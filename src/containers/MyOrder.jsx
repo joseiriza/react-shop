@@ -3,9 +3,11 @@ import OrderItem from '@components/OrderItem';
 import AppContext from '../context/AppContext';
 import '@styles/MyOrder.scss';
 import arrow from '@icons/flechita.svg';
+import { useNavigate, redirect } from 'react-router-dom';
 
 const MyOrder = () => {
 	const { state } = useContext(AppContext);
+	const navigate = useNavigate();
 
 	const sumTotal = () => {
 		const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
@@ -14,7 +16,7 @@ const MyOrder = () => {
 	}
 
 	const handleCheckout = () => {
-		console.log('handling checkout');
+		navigate("/checkout");
 	}
 
 	return (
