@@ -6,6 +6,7 @@ import shoppingCart from '@icons/icon_shopping_cart.svg';
 import AppContext from '../context/AppContext';
 import Menu from '@components/Menu';
 import MyOrder from '../containers/MyOrder';
+// este comentario es una prueba
 
 const Header = () => {
 
